@@ -4,7 +4,7 @@ function setup() {
     createCanvas(200, 200);
     song = loadSound('rose.mp3', loaded);
     button = createButton('play');
-    button.mousePressed(toggledPlaying);
+    button.mousePressed(togglePlaying);
     background(51);
 
     function togglePlaying() {
