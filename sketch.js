@@ -1,9 +1,7 @@
-function setup() {
-    background(200,300,300);
+function setup()
+{
+    createCanvas(400, 400);
+    line(-50, 120, 40, -60);
+line(40, -60, 10, 200);
+
 }
-function draw() {
-   var a =1;
-   var a =2;
-   var a =3;
-    console.log(a); 
-    }
