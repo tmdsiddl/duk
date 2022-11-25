@@ -1,7 +1,24 @@
-function setup()
-{
-    createCanvas(400, 400);
-    line(-50, 120, 40, -60);
-line(40, -60, 10, 200);
+var song;
+var button;
+function setup() {
+    createCanvas(200, 200);
+    song = loadSound('rose.mp3', loaded);
+    button = createButton('play');
+    button.mousePressed(toggledPlaying);
+    background(51);
 
+    function togglePlaying() {
+        if (!song.isPlaying()) {
+            song.play();
+            song.setVolume(0.3);
+            button.html('pause');
+        }else {
+            song.stop();
+            button.html('play');
+        }
+    }
+
+    function loaded(){
+        console.log('loaded');
+    } 
 }
