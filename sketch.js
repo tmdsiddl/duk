@@ -35,9 +35,9 @@ function setup() {
         }
 
             
-    song.addCue(2, changeBackground, color(0, 0, 255));
-    song.addCue(4, changeBackground, color(0, 255, 255));
-    song.addCue(6, changeBackground, color(255, 255, 255));
+    song.addCue(2, changeBackground, color(0, 255, 255));
+    song.addCue(4, changeBackground, color(255, 0, 255));
+    song.addCue(6, changeBackground, color(255, 255, 0));
 
         
     }
