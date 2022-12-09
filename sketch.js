@@ -29,7 +29,7 @@ function setup() {
         
         function jumpSong() {
         var len = song.duration();
-           var t = 0; //random(len);
+           var t = 10; //random(len);
         console.log(t);
         song.jump(t);
         }
