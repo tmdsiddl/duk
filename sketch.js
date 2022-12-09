@@ -10,6 +10,7 @@ function setup() {
     jumpButton = createButton('jump');
     jumpButton.mousePressed(jumpSong);
     background(51);
+    }
 
     function togglePlaying() {
         if (!song.isPlaying()) {
@@ -20,6 +21,7 @@ function setup() {
             song.stop();
             button.html('play');
         }
+    }
 
         function changeBackground(col) {
             background(col);
@@ -31,12 +33,6 @@ function setup() {
         console.log(t);
         song.jump(t);
         }
-
-        function draw() {
-            if (song.currentTime() > 5) {
-            background(song.currentTime() * 10, 0, 255);
-            }
-            }
 
             
     song.addCue(2, changeBackground, color(0, 0, 255));
