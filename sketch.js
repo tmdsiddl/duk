@@ -33,9 +33,9 @@ function setup() {
         }
 
         function draw() {
-            //if (song.currentTime() > 5) {
-            //background(song.currentTime() * 10, 0, 255);
-            //}
+            if (song.currentTime() > 5) {
+            background(song.currentTime() * 10, 0, 255);
+            }
             }
 
             
