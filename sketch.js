@@ -35,7 +35,7 @@ function jumpSong(){
     var len = song.duration();
     var t=10;
     console.log(t);
-    song.jump(10);
+    song.jump(len/2);
 }
 
 function togglePlaying1(){
