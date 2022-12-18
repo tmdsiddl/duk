@@ -5,7 +5,7 @@ let button2;
 let button3;
 let button4
 var jumpButton;
-var t=0;
+var t=10;
 let amp;
 var rB;
 let music;
@@ -14,13 +14,13 @@ function setup()
 {
     createCanvas(640, 480);
     soundFormats('mp3', 'ogg');
-    musicFile = loadSound('music', loadMusic);
-    musicFile2 = loadSound('music2', loadMusic);
+    musicFile = loadSound('rose.mp3', loadMusic);
+    musicFile2 = loadSound('panorama.mp3', loadMusic);
 
     button = createButton("play");
     button.mousePressed(togglePlaying1);
 
-    button2 = createButton("Music1");
+    button2 = createButton("rose.mp3");
     button2.mousePressed(togglePlaying2);
     music = 1;
 
@@ -57,10 +57,10 @@ function togglePlaying1(){
  function togglePlaying2(){
     if(music === 1){
         music = 2;
-        button2.html('Music2');
+        button2.html('panorama.mp3');
     }else{
         music = 1;
-        button2.html('Music1');
+        button2.html('rose.mp3');
     }
     console.log(music);
  }
