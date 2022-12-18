@@ -3,7 +3,7 @@ let musicFile2;
 let button;
 let button2;
 let button3;
-let button4
+let button4;
 var jumpButton;
 var t=10;
 let amp;
@@ -23,8 +23,8 @@ function setup()
     button2 = createButton("Music1");
     button2.mousePressed(togglePlaying2);
 
-    button3 = createButton("volume");
-    button3.mousePressed(jumpSong);
+    jumpButton = createButton("jump");
+    jumpButton.mousePressed(jumpSong);
 
     music = 1;
 
