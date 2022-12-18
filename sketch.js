@@ -7,7 +7,6 @@ let button4;
 var jumpButton;
 //var t;
 let amp;
-var rB;
 let music;
 
 function setup()
@@ -34,14 +33,14 @@ function setup()
 function jumpSong(){
     var len = song.duration();
     var t=0;
-    song.jump(t);
+    random(len);
+    song.jump(len/5);
     console.log(t);
 }
 
 function togglePlaying1(){
     if(music === 1){
         if(!musicFile.isPlaying()){
-            // rB=musicFile.reverseBuffer();
             musicFile.setVolume(0.5);
             musicFile.rate(1);
             musicFile.play();
@@ -53,7 +52,6 @@ function togglePlaying1(){
     }
     if(music === 2){
         if(!musicFile2.isPlaying()){
-            // rB=musicFile.reverseBuffer();
             musicFile2.jump(200);
             musicFile2.setVolume(0.5);
             musicFile.rate(1);
