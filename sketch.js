@@ -5,7 +5,7 @@ let button2;
 let button3;
 let button4;
 var jumpButton;
-var t=10;
+//var t=10;
 let amp;
 var rB;
 let music;
@@ -35,7 +35,7 @@ function jumpSong(){
     var len = song.duration();
     var t=10;
     console.log(t);
-    song.jump(len/2);
+    song.jump(t);
 }
 
 function togglePlaying1(){
@@ -83,7 +83,8 @@ function loadMusic()
 }
 
 function draw(){
-console.log(amp.getLevel(), musicFile.duration());
+    console.log(amp.getLevel(), musicFile.duration());
+
 
 fill(255, 0, 0);
 ellipse(musicFile.currentTime()*20,480-amp.getLevel()*1000, 20, 20);
