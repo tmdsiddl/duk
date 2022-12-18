@@ -5,7 +5,7 @@ let button2;
 let button3;
 let button4;
 var jumpButton;
-//var t=10;
+let t=10;
 let amp;
 var rB;
 let music;
@@ -33,7 +33,7 @@ function setup()
 
 function jumpSong(){
     var len = song.duration();
-    var t=10;
+    t=10;
     console.log(t);
     song.jump(t);
 }
