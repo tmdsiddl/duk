@@ -33,7 +33,7 @@ function setup()
 
 function jumpSong(){
     var len = song.duration();
-    var t=0;
+    var t=10;
     console.log(t);
     song.jump(t);
 }
