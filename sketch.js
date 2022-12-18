@@ -5,7 +5,7 @@ let button2;
 let button3;
 let button4;
 var jumpButton;
-let t=10;
+var t;
 let amp;
 var rB;
 let music;
