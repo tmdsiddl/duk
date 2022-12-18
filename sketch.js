@@ -33,7 +33,6 @@ function setup()
 function jumpSong(){
     var len = song.duration();
     var t=0;
-    random(len);
     song.jump(len/5);
     console.log(t);
 }
