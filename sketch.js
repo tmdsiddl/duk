@@ -22,10 +22,22 @@ function setup()
 
     button2 = createButton("Music1");
     button2.mousePressed(togglePlaying2);
+
+    button3 = crateButton("volume");
+    button3.mousePressed(jumpSong);
+
     music = 1;
 
     amp = new p5.Amplitude();
 }
+
+function jumpSong(){
+    var len = song.duration();
+    var t=0;
+    console.log(t);
+    song.jump(t);
+}
+
 function togglePlaying1(){
     if(music === 1){
         if(!musicFile.isPlaying()){
@@ -33,7 +45,7 @@ function togglePlaying1(){
             musicFile.setVolume(0.5);
             musicFile.rate(1);
             musicFile.play();
-            button.html('pause');
+            button.html('stop');
         }else{
             musicFile.stop();
             button.html('play');
@@ -46,7 +58,7 @@ function togglePlaying1(){
             musicFile2.setVolume(0.5);
             musicFile.rate(1);
             musicFile2.play();
-            button.html('pause');
+            button.html('stop');
         }else{
             musicFile2.stop();
             button.html('play');
