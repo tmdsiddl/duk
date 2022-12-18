@@ -20,7 +20,7 @@ function setup()
     button = createButton("play");
     button.mousePressed(togglePlaying1);
 
-    button2 = createButton("rose.mp3");
+    button2 = createButton("Music1");
     button2.mousePressed(togglePlaying2);
     music = 1;
 
