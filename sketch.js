@@ -23,7 +23,7 @@ function setup()
     button2 = createButton("Music1");
     button2.mousePressed(togglePlaying2);
 
-    button3 = crateButton("volume");
+    button3 = createButton("volume");
     button3.mousePressed(jumpSong);
 
     music = 1;
